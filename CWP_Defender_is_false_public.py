@@ -109,5 +109,5 @@ with open('Without_defenders.csv', 'w', newline='') as csvfile:
     for row in responsejson:
         writer.writerow(row)
 
-csv_to_pdf = pd.read_csv("Without_defenders.csv")
-csv_to_pdf.to_excel("Without_defenders.xlsx", sheet_name="Defender_Is_Required", index=False)
+csv_to_excel = pd.read_csv("Without_defenders.csv")
+csv_to_excel.to_excel("Without_defenders.xlsx", sheet_name="Defender_Is_Required", index=False)
